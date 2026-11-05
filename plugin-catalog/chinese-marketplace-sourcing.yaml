@@ -1,0 +1,25 @@
+name: chinese-marketplace-sourcing
+repo: https://github.com/RegeneratusLabs/chinese-marketplace-sourcing
+sha: c83bb98ed988c4e6d1eab8cdf42fae411b792242
+version: "0.1.0"
+title: "Chinese Marketplace Sourcing"
+description: >-
+  Vet AliExpress and Alibaba sellers at store level: channel choice, readable Alibaba supplier
+  profiles, gated AliExpress store cards, and specialisation/RHD/material signals. Answers
+  seller questions with seller evidence, and states plainly what could not be read.
+maintainer: RegeneratusLabs
+tier: community
+category: tools
+docs_url: https://github.com/RegeneratusLabs/chinese-marketplace-sourcing#readme
+readme: true
+requires_hermes: ">=0.21.6"
+capabilities:
+  provides_tools:
+    - fetch_alibaba_company_profile
+    - fetch_aliexpress_store_page
+    - harvest_store_candidates
+    - score_store_signals
+    - write_supplier_comparison
+  provides_hooks: []
+  provides_middleware: []
+  requires_env: []
